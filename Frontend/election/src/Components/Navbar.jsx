@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -78,8 +78,8 @@ const LoginButton = () => {
 
 
 export default function NavBar() {
-    const { showLoginForm, setShowLoginForm } = useContext(AuthContext);
-    const navigate = useNavigate();
+    const { showLoginForm} = useContext(AuthContext);
+    // const navigate = useNavigate();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 

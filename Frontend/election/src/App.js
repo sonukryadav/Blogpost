@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './Components/Navbar';
-import Routing from './Components/Routing';
+import NavBar from './components/Navbar';
+import Routing from './routing/Routing1';
 import { AuthContextProvider } from './contexts/auth';
 
 function App() {
