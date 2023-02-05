@@ -3,7 +3,6 @@ import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { AppBar, Typography, Toolbar, Button, Avatar } from '@mui/material'
 import { useDispatch } from 'react-redux'
 import { Root, classes } from './styles'
-import memories from '../../images/memories.png'
 import icon from '../../images/icon.png'
 import decode from 'jwt-decode'
 import Avaatar from 'avataaars'
@@ -33,9 +32,9 @@ const Navbar = ({ user, setUser, snackBar, floating }) => {
 	return (
 		<Root className={classes.root} floating={floating?.toString()}>
 			<AppBar className={classes.appBar}>
-				<Link to="/" className={classes.brandContainer}>
-					<img className={classes.logo} src={icon} alt="memories" />
-					<img className={classes.heading} src={memories} alt="memories" />
+				<Link to="/" style={{textDecoration:"none"}} className={classes.brandContainer}>
+					<img className={classes.logo} style={{width:"60px",height:"60px"}} src={icon} alt="memories" />
+					<h2 style={{color:"white",textDecoration:"none", fontStyle:"italic", letterSpacing:"5px"}}>Blogpost</h2>
 				</Link>
 				<Toolbar className={classes.toolbar}>
 					{user ? (

@@ -33,7 +33,7 @@ export const Root = styled('div')(({ theme, floating }) => ({
 		flexDirection: 'row',
 		justifyContent: 'space-between',
 		alignItems: 'center',
-		padding: '10px 50px',
+		padding: '10px 15px',
 		backgroundColor: 'rgba(255, 255, 255, .09)', //"transparent" //"rgba(69, 114, 200)"
 		backdropFilter: 'blur(10px)',
 		[theme.breakpoints.down('md')]: {

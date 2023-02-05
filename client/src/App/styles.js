@@ -1,5 +1,4 @@
 import { styled } from '@mui/material/styles'
-import Image from '../images/background.jpg'
 
 const PREFIX = 'App'
 export const classes = {
@@ -11,8 +10,7 @@ export const classes = {
 
 export const Root = styled('div')(({ theme }) => ({
 	[`&.${classes.root}`]: {
-		backgroundImage: `url(${Image})`,
-		// backgroundImage: `url(https://source.unsplash.com/1920x1080/?dark,night,technology)`,
+		backgroundColor: "#17202A",
 		bacgroundSize: 'contain',
 		backgroundPosition: 'center',
 		backgroundAttachment: 'fixed',

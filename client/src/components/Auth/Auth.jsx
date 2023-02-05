@@ -53,7 +53,7 @@ const Auth = ({ snackBar }) => {
 		snackBar('error', 'Google Sign In was unsuccessful. Try Again Later')
 	}
 
-	useEffect(() => setMargin(isSignup ? '50px' : '200px'), [isSignup])
+	useEffect(() => setMargin(isSignup ? '50px' : '50px'), [isSignup]);
 
 	return (
 		<Root className={classes.root}>
