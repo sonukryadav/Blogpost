@@ -7,7 +7,7 @@ import dotenv from 'dotenv'
 import postRoutes from './routes/posts.js'
 import userRoutes from './routes/user.js'
 
-dotenv.config()
+dotenv.config({path:"./"})
 
 const app = express()
 
