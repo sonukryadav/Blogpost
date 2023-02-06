@@ -1,13 +1,3 @@
-## Table of Contents
-
-- [About the Blogpost Application](#about-the-web-application)
-- [Additional Improvements](#additional-improvements)
-- [Tech Stack Used](#tech-stack-used)
-- [Previews](#previews)
-- [Demo](#demo)
-- [Contributor](#contributor)
-
----
 
 ## About the Blogpost Application
 
