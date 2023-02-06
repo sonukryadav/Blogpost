@@ -101,8 +101,8 @@ const Form = ({ currentId, setCurrentId, user, snackBar }) => {
 		<Root className={dragging ? classes.drag : classes.root} onDragEnter={dragEnter} onDragOver={dragEnter} onDragLeave={dragLeave} onDrop={fileDrop}>
 			<Paper className={classes.paper} elevation={6}>
 				<form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
-					<Typography style={{ color: 'white', textAlign: 'center' }} variant="h6">
-						{currentId ? `Editing ${post.title}` : 'Create a Memory'}
+					<Typography style={{ color: 'white', textAlign: 'center' }} variant="h6" >
+						{currentId ? `Editing ${post.title}` : 'Create a Post'}
 					</Typography>
 					<PrivateSwitch private_={private_} postData={postData} setPrivate={setPrivate} setPostData={setPostData} />
 					<FileInput postData={postData} setPostData={setPostData} classes={classes} fileName={fileName} setFileName={setFileName} media={media} setMedia={setMedia} setEmpty={setMediaEmpty} />
