@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use('/posts', postRoutes)
 app.use('/user', userRoutes)
 
-app.get('/', (_, res) => res.send('Hello to Memories API'))
+app.get('/', (_, res) => res.send('Hello to Blogpost API'))
 
 const PORT = process.env.PORT || 5000
 
