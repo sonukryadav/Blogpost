@@ -28,15 +28,15 @@
 
 - Desktop Preview
 
-![Desktop-Preview](assets/desktop-preview.png)
+![Desktop-Preview](assets/desktop-preview9.png)
 
 - Mobile Preview
 
-![Mobile-Preview](assets/mobile-preview.png)
+![Mobile-Preview](assets/mobile-preview9.png)
 
 - User Details:
 
-![UserDetails](assets/userDetails.png)
+![UserDetails](assets/userDetails9.png)
 
 - Comment:
 
@@ -48,7 +48,7 @@
 
 - SnackBar Alerts
 
-![SnackBar Alerts](assets/snackBar.png)
+![SnackBar Alerts](assets/snackBar9.png)
 
 - Remember Me and Forgot Password
 
