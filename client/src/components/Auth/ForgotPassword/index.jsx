@@ -36,7 +36,7 @@ const ForgotPassword = ({ snackBar }) => {
 	return (
 		<Root className={classes.root} reset={resetPassword?.toString()}>
 			<Container component="main" maxWidth="xs">
-				<Paper className={classes.paper} elevation={6} style={{ marginTop: '260px' }}>
+				<Paper className={classes.paper} elevation={6} style={{ marginTop: '100px' }}>
 					<Avatar className={classes.avatar}>{resetPassword ? <Pattern /> : <LockReset />}</Avatar>
 					<Typography variant="h5">{resetPassword ? 'Reset Password' : 'Account Recovery'}</Typography>
 					<form className={classes.form} onSubmit={handleSubmit}>
