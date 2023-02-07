@@ -6,9 +6,11 @@ import PostMessage from '../models/postMessage.js'
 import crypto from 'crypto'
 import { sendEmail } from '../utils/emailSender.js'
 
-const secret = 'test'
+const secret = process.env.SECRET_KEY;
+
 const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0)
+
 const getTop5Tags = ({ allTags: tags }) => {
 	let frequency = {}
 	tags.map((tag) => (frequency[tag] = countOccurrences(tags, tag)))

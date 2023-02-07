@@ -74,7 +74,6 @@ export const updatePost = async (req, res) => {
 
 	const post = req.body
 	const updatedPost = await PostMessage.findByIdAndUpdate(_id, { ...post, _id }, { new: true })
-
 	res.json(updatedPost)
 }
 
