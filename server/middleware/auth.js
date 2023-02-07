@@ -1,6 +1,7 @@
 import jwt from "jsonwebtoken"
+dotenv.config({path :"./"})
 
-const secret = "test"
+const secret = process.env.SECRET_KEY
 const auth = async (req, _, next) => {
     try {
         const token = req.headers.authorization?.split(" ")[1]
