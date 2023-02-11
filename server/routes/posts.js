@@ -2,7 +2,7 @@ import express from 'express'
 import { getPostsBySearch, getPosts, getPost, createPost, updatePost, deletePost, deleteComment, commentPost, likePost } from '../controllers/posts.js'
 import auth from '../middleware/auth.js'
 
-const router = express.Router()
+const router = express.Router();
 
 // http://localhost:5000/posts/
 router.get('/', auth, getPosts);
