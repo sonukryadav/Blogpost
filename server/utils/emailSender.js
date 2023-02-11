@@ -16,8 +16,7 @@ export const sendEmail = async (email, URL, res) => {
 		from: `Memories Server 👻 <${process.env.USER}>`,
 		to: email,
 		subject: 'Reset password link for memories',
-		text: `Click this link to reset your password
-		${URL}`,
+		text: `Click this link to reset your password ${URL}`,
 	}
 
 	transport.sendMail(mailOptions, (error, info) => {
