@@ -1,14 +1,14 @@
-import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt'
-import ThumbUpAltOutlined from '@mui/icons-material/ThumbUpAltOutlined'
-import DeleteIcon from '@mui/icons-material/Delete'
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
-import moment from 'moment'
-import { useState } from 'react'
-import { CardActions, CardContent, CardMedia, Button, Typography, ButtonBase, Card } from '@mui/material'
-import { Root, classes } from './styles'
-import { useDispatch } from 'react-redux'
-import { deletePost, likePost } from '../../../actions/posts'
-import { useNavigate } from 'react-router-dom'
+import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
+import ThumbUpAltOutlined from '@mui/icons-material/ThumbUpAltOutlined';
+import DeleteIcon from '@mui/icons-material/Delete';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import moment from 'moment';
+import { useState } from 'react';
+import { CardActions, CardContent, CardMedia, Button, Typography, ButtonBase, Card } from '@mui/material';
+import { Root, classes } from './styles';
+import { useDispatch } from 'react-redux';
+import { deletePost, likePost } from '../../../actions/posts';
+import { useNavigate } from 'react-router-dom';
 
 const Post = ({ post, setCurrentId, user, snackBar }) => {
 	const dispatch = useDispatch()
@@ -102,4 +102,4 @@ const Post = ({ post, setCurrentId, user, snackBar }) => {
 	)
 }
 
-export default Post
+export default Post;
