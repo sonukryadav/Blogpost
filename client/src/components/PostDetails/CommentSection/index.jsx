@@ -1,10 +1,10 @@
-import { useState, useRef } from 'react'
-import { Typography, TextField, Button, IconButton, Avatar, Box, Grow } from '@mui/material'
-import { Delete } from '@mui/icons-material'
-import { useDispatch } from 'react-redux'
-import { commentPost, deleteComment } from '../../../actions/posts'
-import { Root, classes } from './styles'
-import moment from 'moment'
+import { useState, useRef } from 'react';
+import { Typography, TextField, Button, IconButton, Avatar, Box, Grow } from '@mui/material';
+import { Delete } from '@mui/icons-material';
+import { useDispatch } from 'react-redux';
+import { commentPost, deleteComment } from '../../../actions/posts';
+import { Root, classes } from './styles';
+import moment from 'moment';
 
 const LegacyComment = ({ comment: _comment }) => {
 	const name = _comment.split(': ')[0]
@@ -105,4 +105,4 @@ const CommentSection = ({ post, user }) => {
 	)
 }
 
-export default CommentSection
+export default CommentSection;
