@@ -1,12 +1,12 @@
-import moment from 'moment'
-import CommentSection from './CommentSection'
-import RecommendedPosts from './RecommendedPosts'
-import { useEffect } from 'react'
-import { Paper, Typography, CircularProgress, Divider, Button } from '@mui/material'
-import { useDispatch, useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom'
-import { Root, classes } from './styles'
-import { getPost } from '../../actions/posts'
+import moment from 'moment';
+import CommentSection from './CommentSection';
+import RecommendedPosts from './RecommendedPosts';
+import { useEffect } from 'react';
+import { Paper, Typography, CircularProgress, Divider, Button } from '@mui/material';
+import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import { Root, classes } from './styles';
+import { getPost } from '../../actions/posts';
 // import { posts, isLoading } from '../../temp'
 // const post = posts[0]
 
