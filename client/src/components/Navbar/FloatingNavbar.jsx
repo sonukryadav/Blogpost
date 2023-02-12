@@ -25,4 +25,4 @@ const FloatingNavbar = ({ user, setUser, snackBar }) => {
 	)
 }
 
-export default FloatingNavbar
+export default FloatingNavbar;
