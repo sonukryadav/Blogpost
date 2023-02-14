@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import PostDetails from '../components/PostDetails/PostDetails'
-import Navbar from '../components/Navbar/Navbar'
-import FloatingNavbar from '../components/Navbar/FloatingNavbar'
-import Home from '../components/Home'
-import Auth from '../components/Auth/Auth'
-import UserDetails from '../components/User/Details'
-import UserUpdate from '../components/User/Update'
-import SnackBar from '../components/SnackBar'
-import ScrollToTop from '../components/ScrollToTop'
-import ForgotPassword from '../components/Auth/ForgotPassword'
+import { useState } from 'react';
+import PostDetails from '../components/PostDetails/PostDetails';
+import Navbar from '../components/Navbar/Navbar';
+import FloatingNavbar from '../components/Navbar/FloatingNavbar';
+import Home from '../components/Home';
+import Auth from '../components/Auth/Auth';
+import UserDetails from '../components/User/Details';
+import UserUpdate from '../components/User/Update';
+import SnackBar from '../components/SnackBar';
+import ScrollToTop from '../components/ScrollToTop';
+import ForgotPassword from '../components/Auth/ForgotPassword';
 
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { classes, Root } from './styles'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { classes, Root } from './styles';
 // import user_ from "../temp"
 
 const App = () => {
