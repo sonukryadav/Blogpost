@@ -1,6 +1,6 @@
-import { styled } from '@mui/material/styles'
+import { styled } from '@mui/material/styles';
 
-const PREFIX = 'UserIcon'
+const PREFIX = 'UserIcon';
 
 export const classes = {
 	root: `${PREFIX}-root`,
