@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios';
 
 const apiURL = ['https://tan-elegant-whale.cyclic.app', 'http://localhost:5000']
 const API = axios.create({ baseURL: apiURL[0] })
@@ -7,7 +7,7 @@ API.interceptors.request.use((req) => {
 	if (localStorage.getItem('profile')) {
 		req.headers.Authorization = `Bearer ${JSON.parse(localStorage.getItem('profile')).token}`
 	}
-	return req
+	return req;
 })
 
 export const fetchPosts = (page) => API.get(`/posts?page=${page}`)

@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import ChipInput from '../ChipInput/ChipInput'
-import { Root, classes } from './styles'
-import { useNavigate } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
-import { getPostsBySearch } from '../../actions/posts'
-import { AppBar, TextField, Button } from '@mui/material'
+import { useState } from 'react';
+import ChipInput from '../ChipInput/ChipInput';
+import { Root, classes } from './styles';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { getPostsBySearch } from '../../actions/posts';
+import { AppBar, TextField, Button } from '@mui/material';
 
 const Search = ({ tags, setTags }) => {
 	const dispatch = useDispatch()
